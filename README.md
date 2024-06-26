@@ -52,7 +52,7 @@ não retornava nenhuma resposta. Após investigar, optei por utilizar o endereç
    ```
 3.	Execute a aplicação:
    ```bash
-    python app.py
+    python3 app.py
    ```
 4.  Em outro terminal, enviar uma solicitação POST com o valor do saque:
    ```bash
@@ -60,5 +60,5 @@ não retornava nenhuma resposta. Após investigar, optei por utilizar o endereç
    ```
 5.	Execute os testes:
    ```bash
-    python -m unittest discover tests
+    python3 -m unittest discover tests
    ```
