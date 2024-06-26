@@ -41,16 +41,16 @@ Esta API simula o funcionamento de um caixa eletrônico. Ela recebe um valor de 
 2.	Instale as dependências:
    ```bash
     pip install -r requirements.txt
-    ```
+   ```
 3.	Execute a aplicação:
    ```bash
     python app.py
-    ```
+   ```
 4.  Em outro terminal Enviar uma solicitação POST com o valor do saque:
    ```bash
     curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://127.0.0.1:5000/api/saque
-    ```
+   ```
 5.	Execute os testes:
    ```bash
     python -m unittest discover tests
-    ```
+   ```
