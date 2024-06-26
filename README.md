@@ -31,6 +31,14 @@ Esta API simula o funcionamento de um caixa eletrônico. Ela recebe um valor de 
     }
     ```
 
+## Principais Desafios
+
+Durante o desenvolvimento deste projeto, um desafio enfrentado foi ao testar a API utilizando o comando curl com o endereço localhost. O comando:
+
+curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://localhost:5000/api/saque
+
+não retornava nenhuma resposta. Após investigar, optei por utilizar o endereço IP padrão 127.0.0.1 como padrão para testes, o que resolveu o problema, ainda não está claro por que localhost não funcionava.
+
 ## Instruções para Execução
 
 1. Clone o repositório:
@@ -48,7 +56,7 @@ Esta API simula o funcionamento de um caixa eletrônico. Ela recebe um valor de 
    ```
 4.  Em outro terminal, enviar uma solicitação POST com o valor do saque:
    ```bash
-    curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://127.0.0.1:5000/api/saque
+     curl -X POST -H "Content-Type: application/json" -d '{"valor": 380}' http://127.0.0.1:5000/api/saque
    ```
 5.	Execute os testes:
    ```bash
