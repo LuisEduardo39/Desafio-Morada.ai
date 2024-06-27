@@ -43,8 +43,10 @@ não retornava nenhuma resposta. Após investigar, optei por utilizar o endereç
 
 1. Clone o repositório:
    ```bash
-   git clone <https://github.com/LuisEduardo39/Desafio-T-cnico-Morada.ai.git>
-   cd caixa_eletronico
+   git clone https://github.com/LuisEduardo39/Desafio-T-cnico-Morada.ai.git
+   ```
+   ```bash
+   cd Desafio-T-cnico-Morada.ai
    ```
 2.	Instale as dependências:
    ```bash
